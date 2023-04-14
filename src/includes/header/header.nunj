@@ -1,7 +1,20 @@
-{% from "../../components/menu/menu.nunj" import menu %}
-
-<div class="header">
+<header class="header">
 	<div class="container">
-		{{ menu() }}
+		<nav class="header__nav">
+			<a class="header__logo-wrapper logo" href="/">
+				{{ icon({
+					iconName: 'logo',
+					className: 'header__logo',
+					attributes: "width='125' height='25'"
+				}) }}
+			</a>
+			<ul class="header__menu menu">
+				{% for item in menuItems %}
+					<li class="menu__item">
+						<a class="menu__link" href="{{item.path}}">{{item.name}}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</nav>
 	</div>
-</div>
+</header>

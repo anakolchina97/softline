@@ -1,0 +1,24 @@
+.hero {
+	min-height: rem(600);
+	margin-bottom: rem(100);
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		min-height: inherit;
+		background: url('/assets/images/hero-bg.png') no-repeat 0 0;
+		background-size: cover;
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		position: relative;
+		min-height: rem(600);
+	}
+	&__title {
+		max-width: rem(709);
+		margin-bottom: rem(60);
+	}
+}

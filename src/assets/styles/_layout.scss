@@ -3,7 +3,9 @@
 }
 
 .container {
-	max-width: 980px;
-	margin: auto;
+	--container-max-width: #{rem(1110)};
+	--container-padding: #{rem(70)};
+	width: min(var(--container-max-width), 100% - (var(--container-padding) * 2));
+	margin: 0 auto;
 	box-sizing: content-box;
 }

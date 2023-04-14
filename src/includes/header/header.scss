@@ -1,4 +1,18 @@
 .header {
-	padding: 20px 0;
-	background: #ccc;
+	&__nav {
+		padding: rem(30) 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.logo {
+	display: block;
+	width: rem(125);
+	height: rem(25);
+	svg {
+		width: inherit;
+		height: inherit;
+	}
 }

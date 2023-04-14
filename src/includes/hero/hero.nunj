@@ -1,0 +1,13 @@
+<section class="hero">
+	<div class="hero__bg"></div>
+	<div class="container">
+		<div class="hero__content">
+			<h1 class="hero__title h1">Поставщик услуг цифровой трансформации и&nbsp;кибербезопасности</h1>
+			<div class="hero__button">
+				{{ button({
+					children: 'На сайт'
+				}) }}
+			</div>
+		</div>
+	</div>
+</section>

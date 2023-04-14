@@ -1,26 +1,20 @@
 {
 	"menuItems": [
 		{
-			"name": "Menu Item 1",
+			"name": "Облачные решения",
 			"path": "#"
 		},
 		{
-			"name": "Menu Item 2",
+			"name": "Кибербезопасность",
 			"path": "#"
 		},
 		{
-			"name": "Menu Item 3",
+			"name": "Импортозамещение",
 			"path": "#"
-		}
-	],
-	"someData": [
-		{
-			"title": "Item 1",
-			"text": "Desc 1"
 		},
 		{
-			"title": "Item 2",
-			"text": "Desc 2"
+			"name": "Цифровая трансформация",
+			"path": "#"
 		}
 	]
 }

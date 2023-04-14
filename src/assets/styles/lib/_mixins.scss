@@ -288,3 +288,11 @@
 		@content;
 	}
 }
+
+@function vw($px, $width: 1250) {
+	@return calc(round($px / $width * 100vw * 10000) / 10000);
+}
+
+@function rem($px, $context: 16) {
+	@return round($px / $context * 1rem * 10000) / 10000;
+}

@@ -5,13 +5,17 @@
 @import 'reset';
 @import 'global';
 @import 'layout';
-// @import 'controls';
+@import 'layout';
+@import 'typography';
 
 // ======= COMPONENTS =======
 @import '../../components/button/button';
 
 // ======= INCLUDES =======
 @import '../../includes/header/header';
+@import '../../includes/menu/menu';
+@import '../../includes/hero/hero';
+@import '../../includes/about/about';
 
 // ======= PAGES =======
 @import 'pages/main';

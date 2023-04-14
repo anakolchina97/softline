@@ -3,8 +3,11 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>{% block title %}Project{% endblock %}</title>
+		<title>{% block title %}SoftLine{% endblock %}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="preload" href="/assets/fonts/ProximaNovaCond-Black.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="/assets/fonts/ProximaNovaCond-Semibold.woff2" as="font" type="font/woff2" crossorigin>
 
 		{{ headScripts() }}
 
@@ -13,6 +16,7 @@
 		{% endblock stylesheets %}
 	</head>
 	<body>
+		{% include "../includes/header/header.nunj" %}
 
 		<div class="wrapper">
 			{% block content %}

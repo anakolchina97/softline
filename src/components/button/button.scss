@@ -1,16 +1,19 @@
 .button {
 	@extend .transition-active;
+	cursor: pointer;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 2px solid rgba(#000, 0.3);
-	height: 54px;
-	font-weight: 700;
-	cursor: pointer;
-	font-size: 16px;
-	letter-spacing: -0.5px;
-	padding: 1px 20px 0;
-
+	border: none;
+	font-size: rem(18);
+	line-height: 1.11;
+	height: rem(54);
+	font-weight: 600;
+	font-family: $default-font;
+	color: $white;
+	background: $secondary;
+	padding: rem(18) rem(28);
+	border-radius: rem(8);
 	&:hover {
 		background-color: rgba(#000, 0.3);
 		color: rgba(#000, 0.8);
