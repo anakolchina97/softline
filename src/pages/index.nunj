@@ -7,4 +7,5 @@
 	{% include "../includes/about/about.nunj" %}
 	{% include "../includes/map/map.nunj" %}
 	{% include "../includes/mission/mission.nunj" %}
+	{% include "../includes/directions/directions.nunj" %}
 {% endblock %}

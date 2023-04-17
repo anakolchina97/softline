@@ -1,0 +1,21 @@
+<section class="directions">
+	<div class="container">
+		<h2 class="directions__title h1 text-center">Направления бизнеса</h2>
+	</div>
+	<ul class="directions__items">
+		{% for direction in directions %}
+			<li class="directions__item directions-item">
+				<div class="directions-item__bg-wrapper">
+					<picture class="directions-item__bg">
+						{# <source srcset="/assets/images/directions-1.webp" type="image/webp"> #}
+						<img src="/assets/images/directions-{{direction.img}}.png" alt="">
+					</picture>
+				</div>
+				<div class="directions-item__content">
+					<p class="directions-item__title">{{ direction.title }}</p>
+					<p class="directions-item__text">{{ direction.text }}</p>
+				</div>
+			</li>
+		{% endfor %}
+	</ul>
+</section>
