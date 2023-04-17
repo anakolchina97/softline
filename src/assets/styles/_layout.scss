@@ -9,3 +9,18 @@
 	margin: 0 auto;
 	box-sizing: content-box;
 }
+
+.row {
+	margin-bottom: rem(40);
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.mb {
+	@for $i from 0 through 100 {
+		&-#{$i*2} {
+			margin-bottom: #{rem($i * 2)};
+		}
+	}
+}

@@ -10,12 +10,15 @@
 
 // ======= COMPONENTS =======
 @import '../../components/button/button';
+@import '../../components/tabs/tabs';
 
 // ======= INCLUDES =======
 @import '../../includes/header/header';
 @import '../../includes/menu/menu';
 @import '../../includes/hero/hero';
 @import '../../includes/about/about';
+@import '../../includes/map/map';
+@import '../../includes/mission/mission';
 
 // ======= PAGES =======
 @import 'pages/main';

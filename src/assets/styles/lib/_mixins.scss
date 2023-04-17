@@ -283,6 +283,16 @@
 	}
 }
 
+@mixin reset-btn {
+	padding: 0;
+	border: 0;
+	color: inherit;
+	background: 0;
+	font-family: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 @mixin phone {
 	@at-root html._phone #{&} {
 		@content;

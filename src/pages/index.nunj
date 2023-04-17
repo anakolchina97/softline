@@ -5,4 +5,6 @@
 {% block content %}
 	{% include "../includes/hero/hero.nunj" %}
 	{% include "../includes/about/about.nunj" %}
+	{% include "../includes/map/map.nunj" %}
+	{% include "../includes/mission/mission.nunj" %}
 {% endblock %}

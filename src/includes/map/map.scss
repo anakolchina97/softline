@@ -1,0 +1,32 @@
+.map {
+	margin-bottom: rem(100);
+	min-height: rem(773);
+}
+
+.map-header {
+	position: relative;
+	background: $white;
+	box-shadow: 0 0 rem(40) rgba($black, 0.06);
+	padding: rem(28) 0;
+	height: rem(80);
+	box-sizing: border-box;
+	&__inner {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+	}
+	&__dropdown-btn {
+		@include reset-btn;
+		display: flex;
+		align-items: center;
+		gap: rem(12);
+	}
+	&__dropdown-text {
+		font-size: rem(24);
+		line-height: 1;
+		font-weight: 600;
+	}
+	&__dropdown-icon {
+		fill: transparent;
+	}
+}
