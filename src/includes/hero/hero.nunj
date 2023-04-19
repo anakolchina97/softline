@@ -5,7 +5,9 @@
 			<h1 class="hero__title h1">Поставщик услуг цифровой трансформации и&nbsp;кибербезопасности</h1>
 			<div class="hero__button">
 				{{ button({
-					children: 'На сайт'
+					children: 'На сайт',
+					href: "https://softline.ru/",
+					attr: "target='_blank'"
 				}) }}
 			</div>
 		</div>
