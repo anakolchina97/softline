@@ -1,0 +1,53 @@
+<section class="life">
+	<div class="container">
+		<header class="life__header">
+			<h2 class="life__title h1">Корпоративная жизнь</h2>
+			<div class="life__slider-buttons">
+				<button class="life__slider-button _prev swiper-button-prev">
+					{{ icon({
+						iconName: 'button-arrow',
+						className: 'life__slider-button-icon',
+						attributes: "width='13' height='22'"
+					})}}
+				</button>
+				<button class="life__slider-button _next swiper-button-next">
+					{{ icon({
+						iconName: 'button-arrow',
+						className: 'life__slider-button-icon _next',
+						attributes: "width='13' height='22'"
+					})}}
+				</button>
+			</div>
+		</header>
+		<div class="life__slider swiper" data-slider-life>
+			<div class="life__slider-wrapper swiper-wrapper">
+				<div class="life__slider-slide swiper-slide">
+					<picture class="life__slide-img">
+						<img src="/assets/images/slide-1.jpg" alt="первый слайд">
+					</picture>
+				</div>
+				<div class="life__slider-slide swiper-slide">
+					<picture class="life__slide-img">
+						<img src="/assets/images/slide-2.jpg" alt="первый слайд">
+					</picture>
+				</div>
+				<div class="life__slider-slide swiper-slide">
+					<picture class="life__slide-img">
+						<img src="/assets/images/slide-3.jpg" alt="первый слайд">
+					</picture>
+				</div>
+				<div class="life__slider-slide swiper-slide">
+					<picture class="life__slide-img">
+						<img src="/assets/images/slide-4.jpg" alt="первый слайд">
+					</picture>
+				</div>
+				<div class="life__slider-slide swiper-slide">
+					<picture class="life__slide-img">
+						<img src="/assets/images/slide-5.jpg" alt="первый слайд">
+					</picture>
+				</div>
+			</div>
+			<div class="life__slider-pagination swiper-pagination"></div>
+		</div>
+	</div>
+</section>

@@ -1,7 +1,7 @@
 .compensation {
 	margin-bottom: rem(100);
 	&__inner {
-		padding: rem(80) rem(30);
+		padding: rem(80) rem(30) rem(60);
 		box-shadow: 0 0 rem(40) rgba($black, 0.06);
 	}
 	&__title {
@@ -10,15 +10,14 @@
 	&__subtitle {
 		margin-bottom: rem(50);
 		&._v1 {
-			margin-top: rem(5);
 			padding-top: rem(70);
-			margin-bottom: 0;
+			margin-bottom: rem(4);
 		}
 	}
 	&__list {
 		display: grid;
 		justify-content: center;
-		grid-template-columns: repeat(5, rem(175));
+		grid-template-columns: repeat(5, rem(178));
 		gap: rem(17);
 		padding-bottom: rem(70);
 		&:not(:last-child) {
@@ -48,6 +47,5 @@
 	}
 	&__list-item-title {
 		line-height: 110%;
-		text-transform: uppercase;
 	}
 }
