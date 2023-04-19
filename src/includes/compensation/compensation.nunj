@@ -1,0 +1,37 @@
+<section class="compensation">
+	<div class="container">
+		<div class="compensation__inner">
+			<h2 class="compensation__title h1 text-center">Компенсационный пакет</h2>
+			<ul class="compensation__list">
+				{% for item in compensationListPackage %}
+					<li class="compensation__list-item">
+						<div class="compensation__list-item-icon-wrapper">
+							{{ icon({
+								iconName: item.icon,
+								className: 'compensation__list-item-icon',
+								attributes: "width='50' height='50'"
+							})}}
+						</div>
+						<p class="compensation__list-item-title">{{ item.title }}</p>
+					</li>
+				{% endfor %}
+			</ul>
+			<h2 class="compensation__subtitle h2 text-center _v1">Программа дополнительной мотивации</h2>
+			<h2 class="compensation__subtitle h2 text-center red">доплата 12% от суммы</h2>
+			<ul class="compensation__list">
+				{% for item in compensationListPackage %}
+					<li class="compensation__list-item">
+						<div class="compensation__list-item-icon-wrapper">
+							{{ icon({
+								iconName: item.icon,
+								className: 'compensation__list-item-icon',
+								attributes: "width='50' height='50'"
+							})}}
+						</div>
+						<p class="compensation__list-item-title">{{ item.title }}</p>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>

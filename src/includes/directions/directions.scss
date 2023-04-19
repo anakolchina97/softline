@@ -6,12 +6,12 @@
 	&__items {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: minmax(rem(260), auto);
 		gap: rem(20);
 	}
 	&__item {
 		position: relative;
 		overflow: hidden;
+		min-height: rem(260);
 	}
 }
 

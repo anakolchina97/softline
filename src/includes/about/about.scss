@@ -2,7 +2,7 @@
 	margin-bottom: rem(100);
 	&__info {
 		background: $white;
-		box-shadow: 0 0 rem(32) rgba($color: #000000, $alpha: 0.08);
+		box-shadow: 0 0 rem(32) rgba($color: $black, $alpha: 0.08);
 		padding: rem(100) rem(110);
 		margin-bottom: rem(100);
 	}

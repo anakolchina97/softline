@@ -6,7 +6,7 @@
 					iconName: 'logo',
 					className: 'header__logo',
 					attributes: "width='125' height='25'"
-				}) }}
+				})}}
 			</a>
 			<ul class="header__menu menu">
 				{% for item in menuItems %}
