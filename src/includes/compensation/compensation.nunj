@@ -9,7 +9,8 @@
 							{{ icon({
 								iconName: item.icon,
 								className: 'compensation__list-item-icon',
-								attributes: "width='50' height='50'"
+								mod: item.mod,
+								attributes: item.iconData
 							})}}
 						</div>
 						<p class="compensation__list-item-title">{{ item.title }}</p>
@@ -18,8 +19,8 @@
 			</ul>
 			<h2 class="compensation__subtitle h2 text-center _v1">Программа дополнительной мотивации</h2>
 			<h2 class="compensation__subtitle h2 text-center red">доплата 12% от суммы</h2>
-			<ul class="compensation__list">
-				{% for item in compensationListPackage %}
+			<ul class="compensation__list _v2">
+				{% for item in compensationListPackage2 %}
 					<li class="compensation__list-item">
 						<div class="compensation__list-item-icon-wrapper">
 							{{ icon({

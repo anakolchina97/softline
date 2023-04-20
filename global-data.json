@@ -52,23 +52,46 @@
 	"compensationListPackage": [
 		{
 			"icon": "dms",
-			"title": "ДМС"
+			"title": "ДМС",
+			"iconData": "width=\"50\" height=\"50\""
+		},
+		{
+			"icon": "cake",
+			"title": "Выходной <br> в&nbsp;день рождения",
+			"iconData": "width=\"50\" height=\"50\""
+		},
+		{
+			"icon": "phone",
+			"title": "Корпоративная мобильная связь",
+			"iconData": "width=\"50\" height=\"50\""
+		},
+		{
+			"icon": "sport",
+			"title": "Корпоративные скидки на&nbsp;спорт",
+			"iconData": "width=\"50\" height=\"50\""
+		},
+		{
+			"icon": "lti",
+			"iconData": "width=\"68\" height=\"50\"",
+			"title": "LTI",
+			"mod": "_big"
+		}
+	],
+	"compensationListPackage2": [
+		{
+			"icon": "printer",
+			"title": "Оргтехники",
+			"iconData": "width=\"50\" height=\"50\""
 		},
 		{
 			"icon": "dms",
-			"title": "Выходной в&nbsp;день рождения"
+			"title": "ДМС",
+			"iconData": "width=\"50\" height=\"50\""
 		},
 		{
-			"icon": "dms",
-			"title": "Корпоративная мобильная связь"
-		},
-		{
-			"icon": "dms",
-			"title": "Корпоративные скидки на&nbsp;спорт"
-		},
-		{
-			"icon": "dms",
-			"title": "LTI"
+			"icon": "home",
+			"iconData": "width=\"68\" height=\"50\"",
+			"title": "Ипотеки"
 		}
 	],
 	"dropDownList": [

@@ -4,7 +4,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-bottom: rem(45);
+		margin-bottom: rem(55);
 	}
 	&__slider-buttons {
 		display: flex;
@@ -12,6 +12,7 @@
 		align-items: center;
 	}
 	&__slider-button {
+		cursor: pointer;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -34,7 +35,7 @@
 		}
 	}
 	&__slider-wrapper {
-		margin-bottom: rem(39);
+		margin-bottom: rem(27);
 	}
 	&__slide-img {
 		img {

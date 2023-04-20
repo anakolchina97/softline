@@ -1,7 +1,7 @@
 .compensation {
 	margin-bottom: rem(100);
 	&__inner {
-		padding: rem(80) rem(30) rem(60);
+		padding: rem(80) rem(30);
 		box-shadow: 0 0 rem(40) rgba($black, 0.06);
 	}
 	&__title {
@@ -10,16 +10,16 @@
 	&__subtitle {
 		margin-bottom: rem(50);
 		&._v1 {
-			padding-top: rem(70);
+			padding-top: rem(68);
 			margin-bottom: rem(4);
 		}
 	}
 	&__list {
-		display: grid;
+		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
-		grid-template-columns: repeat(5, rem(178));
-		gap: rem(17);
-		padding-bottom: rem(70);
+		gap: rem(25) rem(17);
+		padding-bottom: rem(75);
 		&:not(:last-child) {
 			border-bottom: 1px solid rgba($color: $black, $alpha: 0.1);
 		}
@@ -28,6 +28,7 @@
 		}
 	}
 	&__list-item {
+		width: rem(178);
 		display: inline-block;
 		text-align: center;
 	}
@@ -46,6 +47,9 @@
 		fill: transparent;
 		width: rem(50);
 		height: rem(50);
+		&._big {
+			width: rem(68);
+		}
 	}
 	&__list-item-title {
 		line-height: 110%;
