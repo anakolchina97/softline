@@ -1,7 +1,8 @@
 .mission {
 	padding: rem(140) 0;
 	margin-bottom: rem(100);
-	background: $secondary;
+	background: $secondary url('/assets/images/mission.svg') no-repeat center center;
+	background-size: cover;
 	color: $white;
 	&__title {
 		margin-bottom: rem(40);

@@ -7,7 +7,7 @@
 			<li class="directions__item directions-item">
 				<div class="directions-item__bg-wrapper">
 					<picture class="directions-item__bg">
-						{# <source srcset="/assets/images/directions-1.webp" type="image/webp"> #}
+						<source srcset="/assets/images/directions-{{direction.img}}.webp" type="image/webp">
 						<img src="/assets/images/directions-{{direction.img}}.png" alt="">
 					</picture>
 				</div>
