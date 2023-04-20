@@ -21,3 +21,6 @@
 	normal,
 	woff2 woff
 );
+
+@include font-face('Proxima Nova', '../fonts/ProximaNova-Regular', 400, normal, woff2 woff);
+@include font-face('Proxima Nova', '../fonts/ProximaNova-Semibold', 600, normal, woff2 woff);

@@ -19,6 +19,7 @@ class ProjectApp {
 		this.components = {
 			Tabs: require('../../components/tabs/tabs').default,
 			Life: require('../../includes/life/life').default,
+			Map: require('../../includes/map/map').default,
 		};
 		this.helpers = {};
 		this.modules = {};

@@ -12,58 +12,67 @@
 %}
 
 <section class="map">
-	<header class="map__header map-header">
-		<div class="container">
-			<div class="map-header__inner">
-				<button class="map-header__dropdown-btn">
-					<span class="map-header__dropdown-text">Офисы Softline</span>
-					{{ icon({
-						iconName: 'arrow',
-						className: 'map-header__dropdown-icon',
-						attributes: "width='22' height='12'"
-					}) }}
-				</button>
-				<div class="map-header__tabs tabs _map" data-tabs>
-					<ul class="tabs__tab-list" role="tablist">
-						{% for item in itemms %}
-							<li>
-								<button class="tabs__trigger{% if item.isSelected %} _selected{% endif %}" id="{{ item.id }}" role="tab" type="button" data-tab-trigger aria-selected="{% if item.isSelected %}true{% else %}false{% endif %}" tabindex="{{ item.tabindex }}">
-									{{ item.name }}
-								</button>
-							</li>
-						{% endfor %}
-					</ul>
-					<div class="tabs__panels">
-						<div class="tabs__panel" aria-labelledby="all" role="tabpanel" data-tab-panel aria-hidden="false" tabindex="0">
-							<img class="img-fluid" src="/assets/images/map-all.svg" width="1190" height="604" />
-						</div>
-						<div class="tabs__panel" aria-labelledby="moscow" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
-							<img class="img-fluid" src="/assets/images/map-moscow.svg" width="1190" height="600" />
-						</div>
-						<div class="tabs__panel" aria-labelledby="center" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
-							<img class="img-fluid" src="/assets/images/map-center.svg" width="1190" height="599" />
-						</div>
-						<div class="tabs__panel" aria-labelledby="northwest" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
-							<img class="img-fluid" src="/assets/images/map-northwest.svg" width="1190" height="599" />
-						</div>
-						<div class="tabs__panel" aria-labelledby="south" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
-							<img class="img-fluid" src="/assets/images/map-south.svg" width="1190" height="601" />
-						</div>
-						<div class="tabs__panel" aria-labelledby="volga" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
-							<img class="img-fluid" src="/assets/images/map-volga.svg" width="1190" height="601" />
-						</div>
-						<div class="tabs__panel" aria-labelledby="ural" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
-							<img class="img-fluid" src="/assets/images/map-ural.svg" width="1190" height="601" />
-						</div>
-						<div class="tabs__panel" aria-labelledby="siberia" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
-							<img class="img-fluid" src="/assets/images/map-siberia.svg" width="1190" height="601" />
-						</div>
-						<div class="tabs__panel" aria-labelledby="fareast" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
-							<img class="img-fluid" src="/assets/images/map-fareast.svg" width="1190" height="605" />
-						</div>
-					</div>
+	<div class="map__inner">
+		<button class="map__dropdown-btn" data-dropdown-btn>
+			<span class="map__dropdown-text">Офисы Softline</span>
+			{{ icon({
+				iconName: 'arrow',
+				className: 'map__dropdown-icon',
+				attributes: "width='22' height='12' data-dropdown-icon"
+			}) }}
+		</button>
+		<div class="map__dropdown-wrap" data-dropdown>
+			{% for list in dropDownList %}
+				<ul class="map__dropdown-list">
+					{% for link in list %}
+						<li class="map__dropdown-list-item">
+							<a class="map__dropdown-list-link {% if link.title %}_title{% endif %}" href="{{ link.link }}" data-dropdown-link>
+								{{ link.text }}
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+			{% endfor %}
+		</div>
+		<div class="map__tabs tabs _map" data-tabs>
+			<ul class="tabs__tab-list" role="tablist">
+				{% for item in itemms %}
+					<li>
+						<button class="tabs__trigger{% if item.isSelected %} _selected{% endif %}" id="{{ item.id }}" role="tab" type="button" data-tab-trigger aria-selected="{% if item.isSelected %}true{% else %}false{% endif %}" tabindex="{{ item.tabindex }}">
+							{{ item.name }}
+						</button>
+					</li>
+				{% endfor %}
+			</ul>
+			<div class="tabs__panels">
+				<div class="tabs__panel" aria-labelledby="all" role="tabpanel" data-tab-panel aria-hidden="false" tabindex="0">
+					<img class="img-fluid" src="/assets/images/map-all.svg" width="1190" height="604" />
+				</div>
+				<div class="tabs__panel" aria-labelledby="moscow" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
+					<img class="img-fluid" src="/assets/images/map-moscow.svg" width="1190" height="600" />
+				</div>
+				<div class="tabs__panel" aria-labelledby="center" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
+					<img class="img-fluid" src="/assets/images/map-center.svg" width="1190" height="599" />
+				</div>
+				<div class="tabs__panel" aria-labelledby="northwest" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
+					<img class="img-fluid" src="/assets/images/map-northwest.svg" width="1190" height="599" />
+				</div>
+				<div class="tabs__panel" aria-labelledby="south" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
+					<img class="img-fluid" src="/assets/images/map-south.svg" width="1190" height="601" />
+				</div>
+				<div class="tabs__panel" aria-labelledby="volga" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
+					<img class="img-fluid" src="/assets/images/map-volga.svg" width="1190" height="601" />
+				</div>
+				<div class="tabs__panel" aria-labelledby="ural" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
+					<img class="img-fluid" src="/assets/images/map-ural.svg" width="1190" height="601" />
+				</div>
+				<div class="tabs__panel" aria-labelledby="siberia" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
+					<img class="img-fluid" src="/assets/images/map-siberia.svg" width="1190" height="601" />
+				</div>
+				<div class="tabs__panel" aria-labelledby="fareast" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
+					<img class="img-fluid" src="/assets/images/map-fareast.svg" width="1190" height="605" />
 				</div>
 			</div>
 		</div>
-	</header>
+	</div>
 </section>
