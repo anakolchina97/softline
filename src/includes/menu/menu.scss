@@ -1,5 +1,6 @@
 .menu {
 	display: flex;
+	flex-wrap: wrap;
 	gap: rem(20);
 	&__link {
 		text-decoration: none;
@@ -7,5 +8,11 @@
 		font-size: rem(18);
 		line-height: 1.11;
 		font-family: $default-font;
+		@media (max-width: $breakpoint-tablet) {
+			font-size: 14px;
+		}
+	}
+	@media (max-width: $breakpoint-tablet) {
+		gap: 0 10px;
 	}
 }

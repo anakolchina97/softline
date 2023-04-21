@@ -8,6 +8,11 @@
 	width: min(var(--container-max-width), 100% - (var(--container-padding) * 2));
 	margin: 0 auto;
 	box-sizing: content-box;
+	@media (max-width: $breakpoint-tablet) {
+		--container-padding: #{rem(15)};
+		padding: 0 5px;
+		box-sizing: border-box;
+	}
 }
 
 .row {
