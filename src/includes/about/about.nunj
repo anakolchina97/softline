@@ -35,7 +35,7 @@
 					3000
 					<span class="about__items-value _sign _semibold">+</span>
 				</p>
-				<p class="about__items-text text">сотрудников ежегодно проходят оценку и&nbsp;обучение</p>
+				<p class="about__items-text text _lh-mobile-120">сотрудников ежегодно проходят оценку и&nbsp;обучение</p>
 			</li>
 		</ul>
 	</div>

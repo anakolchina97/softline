@@ -23,6 +23,7 @@
 			min-height: 300px;
 			justify-content: initial;
 			padding-top: 40px;
+			box-sizing: border-box;
 		}
 	}
 	&__title {
@@ -38,6 +39,7 @@
 		margin: 0 15px;
 		box-sizing: border-box;
 		overflow: hidden;
+		margin-bottom: 60px;
 		.container {
 			margin: 0;
 			width: 100%;
