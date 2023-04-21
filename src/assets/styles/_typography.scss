@@ -2,6 +2,9 @@
 	font-weight: 600;
 	font-size: rem(56);
 	line-height: 100%;
+	@media (max-width: $breakpoint-tablet) {
+		font-size: 28px;
+	}
 }
 
 .h2 {

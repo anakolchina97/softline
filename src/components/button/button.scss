@@ -25,4 +25,10 @@
 		color: $white;
 		background: $btn-hover;
 	}
+	@media (max-width: $breakpoint-tablet) {
+		padding: 7px 26px;
+		height: 32px;
+		font-size: 16px;
+		line-height: 1.2;
+	}
 }

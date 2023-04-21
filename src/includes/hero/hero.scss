@@ -9,6 +9,9 @@
 		min-height: inherit;
 		background: url('/assets/images/hero-bg.png') no-repeat 0 0;
 		background-size: cover;
+		@media (max-width: $breakpoint-tablet) {
+			background-position: 50%;
+		}
 	}
 	&__content {
 		display: flex;
@@ -16,9 +19,28 @@
 		justify-content: center;
 		position: relative;
 		min-height: rem(600);
+		@media (max-width: $breakpoint-tablet) {
+			min-height: 300px;
+			justify-content: initial;
+			padding-top: 40px;
+		}
 	}
 	&__title {
 		max-width: rem(709);
 		margin-bottom: rem(60);
+		@media (max-width: $breakpoint-tablet) {
+			margin-bottom: 20px;
+		}
+	}
+	@media (max-width: $breakpoint-tablet) {
+		position: relative;
+		min-height: 300px;
+		margin: 0 15px;
+		box-sizing: border-box;
+		overflow: hidden;
+		.container {
+			margin: 0;
+			width: 100%;
+		}
 	}
 }
