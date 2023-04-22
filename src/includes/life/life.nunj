@@ -23,27 +23,32 @@
 			<div class="life__slider-wrapper swiper-wrapper">
 				<div class="life__slider-slide swiper-slide">
 					<picture class="life__slide-img">
+						<source srcset="/assets/images/slide-1.webp" type="image/webp">
 						<img src="/assets/images/slide-1.jpg" alt="первый слайд">
 					</picture>
 				</div>
 				<div class="life__slider-slide swiper-slide">
 					<picture class="life__slide-img">
-						<img src="/assets/images/slide-2.jpg" alt="первый слайд">
+						<source srcset="/assets/images/slide-2.webp" type="image/webp">
+						<img src="/assets/images/slide-2.jpg" alt="второй слайд">
 					</picture>
 				</div>
 				<div class="life__slider-slide swiper-slide">
 					<picture class="life__slide-img">
-						<img src="/assets/images/slide-3.jpg" alt="первый слайд">
+						<source srcset="/assets/images/slide-3.webp" type="image/webp">
+						<img src="/assets/images/slide-3.jpg" alt="третий слайд">
 					</picture>
 				</div>
 				<div class="life__slider-slide swiper-slide">
 					<picture class="life__slide-img">
-						<img src="/assets/images/slide-4.jpg" alt="первый слайд">
+						<source srcset="/assets/images/slide-4.webp" type="image/webp">
+						<img src="/assets/images/slide-4.jpg" alt="четвертый слайд">
 					</picture>
 				</div>
 				<div class="life__slider-slide swiper-slide">
 					<picture class="life__slide-img">
-						<img src="/assets/images/slide-5.jpg" alt="первый слайд">
+						<source srcset="/assets/images/slide-5.webp" type="image/webp">
+						<img src="/assets/images/slide-5.jpg" alt="пятый слайд">
 					</picture>
 				</div>
 			</div>
