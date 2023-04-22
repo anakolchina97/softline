@@ -12,6 +12,10 @@
 		@media (max-width: $breakpoint-tablet) {
 			background-position: 50%;
 		}
+		@supports (background: url('/assets/images/hero-bg.webp')) {
+			background: url('/assets/images/hero-bg.webp') no-repeat 0 0;
+			background-size: cover;
+		}
 	}
 	&__content {
 		display: flex;
