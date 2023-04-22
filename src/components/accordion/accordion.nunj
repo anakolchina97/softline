@@ -1,0 +1,14 @@
+{% from "../icon/icon.nunj" import "icon" %}
+
+{% macro accordion(props) %}
+	<div class="accordion{% if props.className %} {{ props.className }}{% endif %}" data-accordion>
+		<button class="accordion__toggle" type="button" data-accordion-toggle>
+			{{ props.question }}
+		</button>
+		<div class="accordion__content" data-accordion-content>
+			<div itemprop="text">
+				{{props.answer}}
+			</div>
+		</div>
+	</div>
+{% endmacro %}

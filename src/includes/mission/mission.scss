@@ -1,6 +1,5 @@
 .mission {
 	padding: rem(140) 0;
-	margin-bottom: rem(100);
 	background: $secondary url('/assets/images/mission.svg') no-repeat center center;
 	background-size: cover;
 	color: $white;
@@ -12,7 +11,8 @@
 	}
 	@media (max-width: $breakpoint-tablet) {
 		padding: 32px 0;
-		margin: 0 15px;
+		margin-left: 15px;
+		margin-right: 15px;
 		.container {
 			margin: 0;
 			width: 100%;

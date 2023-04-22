@@ -1,0 +1,141 @@
+.accordion {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	row-gap: 20px;
+	flex-direction: column;
+	border-top: 1px solid var(--stoney-gray-50);
+	border-bottom: 1px solid var(--stoney-gray-50);
+	text-align: left;
+	overflow: hidden;
+	@media (max-width: 768px) {
+		row-gap: 5px;
+	}
+	&._no-border {
+		border: 0;
+	}
+	&:first-child {
+		border-top: none;
+	}
+	&:last-child {
+		border-bottom: none;
+	}
+	&._border-bottom {
+		border-bottom: 1px solid var(--stoney-gray-50);
+	}
+	&:hover {
+		z-index: 1;
+	}
+	& + & {
+		margin-top: -1px;
+	}
+	&._opened {
+		border: none;
+		.accordion__toggle {
+			&::before {
+				transform: rotate(180deg);
+			}
+		}
+		& + .accordion {
+			border-top: none;
+		}
+	}
+	&._loaded {
+		.accordion__content {
+			display: block;
+		}
+	}
+	&__toggle {
+		background: 0;
+		border: 0;
+		outline: none;
+		font: inherit;
+		color: inherit;
+		position: relative;
+		display: flex;
+		flex-shrink: 0;
+		column-gap: rem(10);
+		width: fit-content;
+		padding: rem(20) 0;
+		line-height: 1.5;
+		text-align: left;
+		cursor: pointer;
+		user-select: none;
+		._no-border & {
+			padding-bottom: 0;
+		}
+		&::after {
+			content: '';
+			flex-shrink: 0;
+			position: relative;
+			width: rem(16);
+			height: rem(9);
+			left: -5px;
+			transition: transform 0.3s ease;
+			background: inline('accordion-arrow.svg') no-repeat center;
+			background-size: contain;
+		}
+		&.section-title {
+			font: var(--font-h1);
+			color: var(--dark-space);
+			&::before {
+				top: 0.2em;
+			}
+			@media (max-width: 768px) {
+				font: var(--font-h2);
+			}
+		}
+		&.section-subtitle {
+			font: var(--font-h2);
+			color: var(--dark-space);
+		}
+		@media (max-width: 768px) {
+			&.f-h3-mobile {
+				font: var(--font-h3);
+				&::before {
+					top: 0.05em;
+				}
+			}
+		}
+	}
+	&__title {
+		font: var(--font-body-l);
+		&.f-body-m {
+			font: var(--font-body-m);
+		}
+	}
+	&__content {
+		display: none;
+		padding-bottom: rem(20);
+		@media (max-width: 768px) {
+			padding-bottom: 28px;
+		}
+		&._pl {
+			padding-left: rem(24);
+		}
+	}
+	&__nowrap {
+		white-space: nowrap;
+	}
+	&__content-title {
+		font-weight: 700;
+	}
+	&__content-text {
+		& + & {
+			margin-top: 1em;
+		}
+	}
+	&__content-icon {
+		vertical-align: text-bottom;
+		width: 1.1em;
+		height: 1.1em;
+		&._wide {
+			width: 2.2em;
+		}
+	}
+	&__content-word {
+		&._nowrap {
+			white-space: nowrap;
+		}
+	}
+}

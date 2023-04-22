@@ -4,7 +4,7 @@
 	</div>
 	<ul class="directions__items">
 		{% for direction in directions %}
-			<li class="directions__item directions-item">
+			<li class="directions__item directions-item" data-accordion="mobile">
 				<div class="directions-item__bg-wrapper">
 					<picture class="directions-item__bg">
 						<source srcset="/assets/images/directions-{{direction.img}}.webp" type="image/webp">
@@ -12,8 +12,8 @@
 					</picture>
 				</div>
 				<div class="directions-item__content">
-					<p class="directions-item__title">{{ direction.title }}</p>
-					<p class="directions-item__text">{{ direction.text }}</p>
+					<p class="directions-item__title" data-accordion-toggle>{{ direction.title }}</p>
+					<p class="directions-item__text" data-accordion-content>{{ direction.text }}</p>
 				</div>
 			</li>
 		{% endfor %}
