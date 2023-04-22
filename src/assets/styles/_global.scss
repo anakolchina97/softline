@@ -80,4 +80,9 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	@media (max-width: $breakpoint-tablet) {
+		width: 862px;
+		height: 436px;
+		object-position: -5px;
+	}
 }

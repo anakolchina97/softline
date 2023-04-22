@@ -1,16 +1,39 @@
 .tabs {
 	$this: &;
 	&._map {
+		#{$this}__panels-wrap {
+			@media (max-width: $breakpoint-tablet) {
+				position: relative;
+				left: -5px;
+				width: calc(100% + 10px);
+				box-sizing: border-box;
+				overflow: hidden;
+				overflow-x: auto;
+				scrollbar-width: none;
+				@include scrollbar {
+					display: none;
+				}
+			}
+		}
 		#{$this}__panels {
 			position: absolute;
 			left: 50%;
 			transform: translateX(-50%);
 			margin-top: rem(118);
 			width: 100%;
-			overflow: hidden;
+			@media (max-width: $breakpoint-tablet) {
+				position: static;
+				transform: none;
+				width: auto;
+				margin-top: 10px;
+			}
 		}
 		#{$this}__panel {
 			padding: 0 rem(30);
+			@media (max-width: $breakpoint-tablet) {
+				padding: 0;
+				height: 330px;
+			}
 		}
 	}
 	&__tab-list {
@@ -25,6 +48,11 @@
 			@include scrollbar {
 				display: none;
 			}
+		}
+		@media (max-width: $breakpoint-tablet) {
+			gap: 17px;
+			overflow: hidden;
+			overflow-x: auto;
 		}
 	}
 	&__trigger {
@@ -53,7 +81,14 @@
 				height: rem(3);
 				background: currentColor;
 				display: block;
+				@media (max-width: $breakpoint-tablet) {
+					bottom: -1px;
+				}
 			}
+		}
+		@media (max-width: $breakpoint-tablet) {
+			font-size: 14px;
+			padding-bottom: 22px;
 		}
 	}
 	&__panels {

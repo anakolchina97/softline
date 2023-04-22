@@ -44,33 +44,35 @@
 					</li>
 				{% endfor %}
 			</ul>
-			<div class="tabs__panels">
-				<div class="tabs__panel" aria-labelledby="all" role="tabpanel" data-tab-panel aria-hidden="false" tabindex="0">
-					<img class="img-fluid" src="/assets/images/map-all.svg" width="1190" height="604" />
-				</div>
-				<div class="tabs__panel" aria-labelledby="moscow" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
-					<img class="img-fluid" src="/assets/images/map-moscow.svg" width="1190" height="600" />
-				</div>
-				<div class="tabs__panel" aria-labelledby="center" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
-					<img class="img-fluid" src="/assets/images/map-center.svg" width="1190" height="599" />
-				</div>
-				<div class="tabs__panel" aria-labelledby="northwest" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
-					<img class="img-fluid" src="/assets/images/map-northwest.svg" width="1190" height="599" />
-				</div>
-				<div class="tabs__panel" aria-labelledby="south" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
-					<img class="img-fluid" src="/assets/images/map-south.svg" width="1190" height="601" />
-				</div>
-				<div class="tabs__panel" aria-labelledby="volga" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
-					<img class="img-fluid" src="/assets/images/map-volga.svg" width="1190" height="601" />
-				</div>
-				<div class="tabs__panel" aria-labelledby="ural" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
-					<img class="img-fluid" src="/assets/images/map-ural.svg" width="1190" height="601" />
-				</div>
-				<div class="tabs__panel" aria-labelledby="siberia" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
-					<img class="img-fluid" src="/assets/images/map-siberia.svg" width="1190" height="601" />
-				</div>
-				<div class="tabs__panel" aria-labelledby="fareast" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
-					<img class="img-fluid" src="/assets/images/map-fareast.svg" width="1190" height="605" />
+			<div class="tabs__panels-wrap">
+				<div class="tabs__panels">
+					<div class="tabs__panel" aria-labelledby="all" role="tabpanel" data-tab-panel aria-hidden="false" tabindex="0">
+						<img class="img-fluid" src="/assets/images/map-all.svg" width="1190" height="604" />
+					</div>
+					<div class="tabs__panel" aria-labelledby="moscow" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
+						<img class="img-fluid" src="/assets/images/map-moscow.svg" width="1190" height="600" />
+					</div>
+					<div class="tabs__panel" aria-labelledby="center" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
+						<img class="img-fluid" src="/assets/images/map-center.svg" width="1190" height="599" />
+					</div>
+					<div class="tabs__panel" aria-labelledby="northwest" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
+						<img class="img-fluid" src="/assets/images/map-northwest.svg" width="1190" height="599" />
+					</div>
+					<div class="tabs__panel" aria-labelledby="south" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
+						<img class="img-fluid" src="/assets/images/map-south.svg" width="1190" height="601" />
+					</div>
+					<div class="tabs__panel" aria-labelledby="volga" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
+						<img class="img-fluid" src="/assets/images/map-volga.svg" width="1190" height="601" />
+					</div>
+					<div class="tabs__panel" aria-labelledby="ural" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
+						<img class="img-fluid" src="/assets/images/map-ural.svg" width="1190" height="601" />
+					</div>
+					<div class="tabs__panel" aria-labelledby="siberia" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
+						<img class="img-fluid" src="/assets/images/map-siberia.svg" width="1190" height="601" />
+					</div>
+					<div class="tabs__panel" aria-labelledby="fareast" role="tabpanel" data-tab-panel aria-hidden="true" tabindex="-1">
+						<img class="img-fluid" src="/assets/images/map-fareast.svg" width="1190" height="605" />
+					</div>
 				</div>
 			</div>
 		</div>

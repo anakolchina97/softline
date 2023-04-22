@@ -18,6 +18,7 @@ html {
 	max-width: rem(1250);
 	width: 100%;
 	margin: 0 auto;
+	overflow-x: hidden;
 	@media (max-width: $breakpoint-desktop) {
 		font-size: vw(16, 1250);
 	}

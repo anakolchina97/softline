@@ -1,6 +1,16 @@
 .map {
-	margin-bottom: rem(100);
 	min-height: rem(773);
+	@media (max-width: $breakpoint-tablet) {
+		margin: 0 15px;
+		margin-bottom: 65px;
+		min-height: auto;
+	}
+	&__tabs {
+		@media (max-width: $breakpoint-tablet) {
+			width: 100%;
+			padding-bottom: 19px;
+		}
+	}
 	&__inner {
 		display: flex;
 		align-items: baseline;
@@ -9,14 +19,22 @@
 		background: $white;
 		box-shadow: 0 0 rem(40) rgba($black, 0.06);
 		padding: rem(28) rem(70);
-		height: rem(80);
+		min-height: rem(80);
 		box-sizing: border-box;
+		@media (max-width: $breakpoint-tablet) {
+			padding: 20px 5px 0;
+			flex-direction: column;
+		}
 	}
 	&__dropdown-btn {
 		@include reset-btn;
 		display: flex;
 		align-items: center;
 		gap: rem(12);
+		@media (max-width: $breakpoint-tablet) {
+			gap: 6px;
+			margin-bottom: 14px;
+		}
 	}
 	&__dropdown-wrap {
 		position: absolute;
@@ -38,6 +56,9 @@
 		font-size: rem(24);
 		line-height: 1;
 		font-weight: 600;
+		@media (max-width: $breakpoint-tablet) {
+			font-size: 20px;
+		}
 	}
 	&__dropdown-icon {
 		fill: transparent;
@@ -48,6 +69,10 @@
 		&._show {
 			transform: rotate(-180deg);
 			transition: transform 300ms linear;
+		}
+		@media (max-width: $breakpoint-tablet) {
+			width: 20px;
+			height: 20px;
 		}
 	}
 	&__dropdown-list {
