@@ -5,11 +5,22 @@
 		align-items: center;
 		justify-content: space-between;
 		margin-bottom: rem(55);
+		@media (max-width: $breakpoint-tablet) {
+			margin-bottom: 20px;
+		}
 	}
 	&__slider-buttons {
 		display: flex;
 		gap: rem(20);
 		align-items: center;
+		@media (max-width: $breakpoint-tablet) {
+			display: none;
+		}
+	}
+	&__slider-pagination {
+		@media (max-width: $breakpoint-tablet) {
+			display: none;
+		}
 	}
 	&__slider-button {
 		cursor: pointer;
@@ -41,5 +52,8 @@
 		img {
 			width: 100%;
 		}
+	}
+	@media (max-width: $breakpoint-tablet) {
+		padding-bottom: 20px;
 	}
 }

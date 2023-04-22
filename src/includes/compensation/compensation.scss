@@ -37,7 +37,9 @@
 		}
 		&:last-child {
 			#{$this}__list-item {
-				width: 80px;
+				@media (max-width: $breakpoint-tablet) {
+					width: 80px;
+				}
 			}
 			padding-bottom: 0;
 			@media (max-width: $breakpoint-tablet) {

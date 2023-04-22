@@ -50,6 +50,20 @@
 		gap: rem(24);
 		&._show {
 			display: flex;
+			@media (max-width: $breakpoint-tablet) {
+				display: grid;
+			}
+		}
+		@media (max-width: $breakpoint-tablet) {
+			gap: rem(5);
+			padding: 20px 5px;
+			flex-wrap: wrap;
+			grid-template-columns: repeat(3, 1fr);
+			top: 40px;
+			z-index: 4;
+			box-shadow: none;
+			width: calc(100% + 2px);
+			left: -1px;
 		}
 	}
 	&__dropdown-text {
@@ -80,11 +94,24 @@
 		flex-direction: column;
 		gap: rem(10);
 	}
+	&__dropdown-list-item {
+		@media (max-width: $breakpoint-tablet) {
+			&:first-child ~ li {
+				display: none;
+				&._show {
+					display: block;
+				}
+			}
+		}
+	}
 	&__dropdown-list-link {
 		font-family: $secondary-font;
 		text-decoration: none;
 		&._title {
 			font-weight: 600;
+		}
+		@media (max-width: $breakpoint-tablet) {
+			font-size: 14px;
 		}
 	}
 }

@@ -1,13 +1,43 @@
 .mission {
+	position: relative;
 	padding: rem(140) 0;
-	background: $secondary url('/assets/images/mission.svg') no-repeat center center;
-	background-size: cover;
+	background: $secondary;
+	overflow: hidden;
 	color: $white;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: calc(377 / 471 * 100%);
+		top: 50%;
+		transform: translateY(-50%);
+		background: inline('left-pattern.svg') no-repeat 0 center;
+		@media (max-width: $breakpoint-tablet) {
+			left: -25px;
+		}
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: calc(377 / 471 * 100%);
+		top: 50%;
+		right: -5px;
+		transform: translateY(-50%) scale(-1, -1);
+		background: inline('left-pattern.svg') no-repeat 0 0;
+		@media (max-width: $breakpoint-tablet) {
+			right: -10px;
+		}
+	}
 	&__title {
 		margin-bottom: rem(40);
 		@media (max-width: $breakpoint-tablet) {
 			margin-bottom: 10px;
 		}
+	}
+	.container {
+		position: relative;
+		z-index: 3;
 	}
 	@media (max-width: $breakpoint-tablet) {
 		padding: 32px 0;

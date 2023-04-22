@@ -23,9 +23,9 @@
 		</button>
 		<div class="map__dropdown-wrap" data-dropdown>
 			{% for list in dropDownList %}
-				<ul class="map__dropdown-list">
+				<ul class="map__dropdown-list" data-dropdown-list>
 					{% for link in list %}
-						<li class="map__dropdown-list-item">
+						<li class="map__dropdown-list-item" data-dropdown-list-item>
 							<a class="map__dropdown-list-link {% if link.title %}_title{% endif %}" href="{{ link.link }}" data-dropdown-link>
 								{{ link.text }}
 							</a>
