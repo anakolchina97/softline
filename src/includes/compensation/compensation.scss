@@ -1,17 +1,29 @@
 .compensation {
-	margin-bottom: rem(100);
+	$this: &;
 	&__inner {
 		padding: rem(80) rem(30);
 		box-shadow: 0 0 rem(40) rgba($black, 0.06);
+		@media (max-width: $breakpoint-tablet) {
+			padding: 24px 0;
+		}
 	}
 	&__title {
-		margin-bottom: 50px;
+		margin-bottom: rem(50);
+		@media (max-width: $breakpoint-tablet) {
+			margin-bottom: 40px;
+		}
 	}
 	&__subtitle {
 		margin-bottom: rem(50);
 		&._v1 {
 			padding-top: rem(68);
 			margin-bottom: rem(4);
+			@media (max-width: $breakpoint-tablet) {
+				padding-top: 24px;
+			}
+		}
+		@media (max-width: $breakpoint-tablet) {
+			margin-bottom: 20px;
 		}
 	}
 	&__list {
@@ -24,13 +36,25 @@
 			border-bottom: 1px solid rgba($color: $black, $alpha: 0.1);
 		}
 		&:last-child {
+			#{$this}__list-item {
+				width: 80px;
+			}
 			padding-bottom: 0;
+			@media (max-width: $breakpoint-tablet) {
+				gap: 25px;
+			}
+		}
+		@media (max-width: $breakpoint-tablet) {
+			padding-bottom: 25px;
 		}
 	}
 	&__list-item {
 		width: rem(178);
 		display: inline-block;
 		text-align: center;
+		@media (max-width: $breakpoint-tablet) {
+			width: 120px;
+		}
 	}
 	&__list-item-icon-wrapper {
 		display: flex;
@@ -42,16 +66,28 @@
 		border-radius: 50%;
 		background: rgba($color: $black, $alpha: 0.05);
 		margin-bottom: rem(10);
+		@media (max-width: $breakpoint-tablet) {
+			width: 80px;
+			height: 80px;
+		}
 	}
 	&__list-item-icon {
 		fill: transparent;
 		width: rem(50);
 		height: rem(50);
+		@media (max-width: $breakpoint-tablet) {
+			width: 35px;
+			height: 35px;
+		}
 		&._big {
 			width: rem(68);
 		}
 	}
 	&__list-item-title {
+		text-align: center;
 		line-height: 110%;
+		@media (max-width: $breakpoint-tablet) {
+			font-size: 16px;
+		}
 	}
 }

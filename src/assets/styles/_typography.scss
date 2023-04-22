@@ -11,6 +11,9 @@
 	font-weight: 600;
 	font-size: rem(40);
 	line-height: 120%;
+	@media (max-width: $breakpoint-tablet) {
+		font-size: 22px;
+	}
 }
 
 .text {

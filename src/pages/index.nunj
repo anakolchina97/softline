@@ -8,6 +8,6 @@
 	{% include "../includes/map/map.nunj" %}
 	{% include "../includes/mission/mission.nunj" %}
 	{% include "../includes/directions/directions.nunj" %}
-	{# {% include "../includes/compensation/compensation.nunj" %}
-	{% include "../includes/life/life.nunj" %} #}
+	{% include "../includes/compensation/compensation.nunj" %}
+	{# {% include "../includes/life/life.nunj" %} #}
 {% endblock %}
