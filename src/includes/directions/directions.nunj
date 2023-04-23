@@ -1,10 +1,10 @@
-<section class="directions">
+<section class="directions" >
 	<div class="container">
 		<h2 class="directions__title h1 text-center">Направления бизнеса</h2>
 	</div>
 	<ul class="directions__items">
 		{% for direction in directions %}
-			<li class="directions__item directions-item" data-accordion="mobile">
+			<li class="directions__item directions-item" data-accordion="mobile" data-directions-item>
 				<div class="directions-item__bg-wrapper">
 					<picture class="directions-item__bg">
 						<source srcset="/assets/images/directions-{{direction.img}}.webp" type="image/webp">

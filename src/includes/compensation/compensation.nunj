@@ -1,4 +1,4 @@
-<section class="compensation">
+<section class="compensation" data-animation>
 	<div class="container">
 		<div class="compensation__inner">
 			<h2 class="compensation__title h1 text-center">Компенсационный пакет</h2>

@@ -14,6 +14,7 @@ class Life {
 			pagination: {
 				el: '.swiper-pagination',
 			},
+			cssMode: true,
 			slidesPerView: 1,
 		});
 	}

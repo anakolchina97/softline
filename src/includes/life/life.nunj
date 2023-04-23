@@ -1,4 +1,4 @@
-<section class="life">
+<section class="life" data-animation>
 	<div class="container">
 		<header class="life__header">
 			<h2 class="life__title h1">Корпоративная жизнь</h2>
