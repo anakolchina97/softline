@@ -16,6 +16,11 @@ class Life {
 			},
 			cssMode: true,
 			slidesPerView: 1,
+			breakpoints: {
+				768: {
+					cssMode: false,
+				},
+			},
 		});
 	}
 }
