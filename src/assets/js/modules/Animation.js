@@ -5,6 +5,9 @@ gsap.registerPlugin(ScrollTrigger);
 class Animation {
 	constructor() {
 		this.init();
+		window.addEventListener('resize', () => {
+			this.init();
+		});
 	}
 	init() {
 		this.animationSection();
